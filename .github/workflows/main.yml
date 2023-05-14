@@ -20,13 +20,13 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
-
-      - name: Install sass
-        run: npm install -g sass
+        run: npm ci
 
       - name: Build project
         run: npm run build
+
+      - name: Install sass
+        run: npm install -g sass
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2.2.4
