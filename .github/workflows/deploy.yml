@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
-      - name: Install SASS
+      - name: Install sass
         run: npm install -g sass
 
       - name: Build project
